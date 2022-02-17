@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Budget</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <!-- header part -->
+    <header>
+        <h1 class="text-5xl font-bold text-purple-500 text-center mt-4">Money Budget</h1>
+    </header>
+    <!-- main part -->
+    <main class="w-5/6 mx-auto mt-16 my-auto ">
+        <section class="grid lg:grid-cols-2 sm:grid-cols-1  ">
+            <img src="money.jpg" alt="">
+            <!-- budget part -->
+            <div class="bg-slate-200 mx-16 mt-4  ">
+                <!-- //Income -->
+                <div>
+                    <h3 class="text-3xl font-bold text-center mt-4">Income</h3>
+                    <div class="flext-auto text-2xl font-medium text-center mt-4">
+
+
+                        <h1 id="income">Income: <input id="income" class=" bg-stone-300 w-40 " type=" text"
+                                placeholder="Enter amount">
+                        </h1>
+                    </div>
+
+                </div>
+                <!-- Food -->
+                <div>
+                    <h3 class="text-3xl font-bold text-center mt-6">Expenses</h3>
+
+                    <div class=" text-2xl font-medium text-center mt-4">
+
+                        <h1> Food : <input id="food" class="bg-stone-300 w-40" type="text" placeholder="Enter amount">
+                        </h1>
+
+
+
+                        <!-- Rent -->
+                        <div class=" text-2xl font-medium text-center mt-4">
+
+                            <h1> Total Rent : <input id="total-rent" class="bg-stone-300 w-40" type="text"
+                                    placeholder="Enter amount"></h1>
+
+                            <!-- Cloths -->
+                            <div class=" text-2xl font-medium text-center mt-4">
+
+                                <h1>Cloths : <input id="cloths" class="bg-stone-300 w-40" type="text"
+                                        placeholder="Enter amount"></h1>
+                            </div>
+                        </div>
+
+                        <!-- Calculation Button -->
+                        <div class="bg-indigo-600 text-center text-white py-2 rounded mt-8 w-40 mx-auto font-medium">
+                            <button id="calculation-button">Calculate</button>
+                        </div>
+
+                        <!--Total Expenses  -->
+                        <h3 class="mt-4 text-2xl font-semibold text-center mt-4 mx-auto">Total Expenses: <span
+                                id="total-expenses">00</span></h3>
+                        <!-- Balance -->
+                        <h3 class="mt-4 text-2xl font-semibold text-center mt-4 mx-auto">Balance: <span
+                                id="balance">00</span>
+                        </h3>
+                        <!-- save  -->
+                        <div class="mt-8 ">
+                            <p class="text-left font-semibold ml-4">Save : <input id="save-input" type="text"
+                                    class="text-center px-0 py-1 text-white w-32"> <span class="ml-4">%</span>
+                                <button id="save-button"
+                                    class="bg-indigo-600 text-white py-2 rounded mt-8 w-32 font-semibold ">Save</button>
+
+                            </p>
+                        </div>
+
+
+
+                        <div>
+                            <h3 class="mt-4 text-2xl font-semibold text-center mt-4 mx-auto">Saving Amount: <span
+                                    id="saving-amount">00</span></h3>
+
+                            <h3 class="mt-4 text-2xl font-semibold text-center mt-4 mx-auto">Remaining Balance: <span
+                                    id="remaining-balance">00</span></h3>
+
+                        </div>
+
+                    </div>
+
+
+
+
+
+
+        </section>
+    </main>
+
+
+    <script src=" money.js">
+    </script>
+</body>
+
+</html>
