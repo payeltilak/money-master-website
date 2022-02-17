@@ -11,7 +11,7 @@ function getInputId(input) {
     }
 
 }
-// function of 
+// function of totalbalance
 function currentBalance() {
     const income = getInputId('income')
     const expenses = getInputId('food') + getInputId('total-rent') + getInputId('cloths');
@@ -45,8 +45,6 @@ document.getElementById("save-button").addEventListener('click', function () {
 
         const remainingBalance = document.getElementById('remaining-balance').innerText = balance - saveAmount;
     }
-
-
 })
 
 
