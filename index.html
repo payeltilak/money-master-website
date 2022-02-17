@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Money Budget</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
@@ -36,7 +36,7 @@
                     </div>
 
                 </div>
-                <!-- Food -->
+                <!-- FoodCost -->
                 <div>
                     <h3 class="text-3xl font-bold text-center mt-6">Expenses</h3>
 
@@ -44,13 +44,13 @@
 
                         <h1> Food : <input id="food" class="bg-stone-300 w-40" type="number" placeholder="Enter amount">
                         </h1>
-                        <!-- Rent -->
+                        <!-- RentCost-->
                         <div class=" text-2xl font-medium text-center mt-4">
 
                             <h1> Total Rent : <input id="total-rent" class="bg-stone-300 w-40" type="number"
                                     placeholder="Enter amount"></h1>
 
-                            <!-- Cloths -->
+                            <!-- ClothsCost -->
                             <div class=" text-2xl font-medium text-center mt-4">
 
                                 <h1>Cloths : <input id="cloths" class="bg-stone-300 w-40" type="number"
@@ -71,15 +71,15 @@
                                 id="balance">00</span>
                         </h3>
                         <!-- save  -->
-                        <div class="mt-4 ">
-                            <p class="text-left font-semibold ml-4">Save : <input id="save-input" type="number"
-                                    class="text-center  py-1 w-24 "> <span class="ml-4">%</span>
+                        <div class="mt-4">
+                            <p class="text-left font-semibold ml-4 text-center">Save : <input id="save-input"
+                                    type="number" class="text-center  py-1 w-24 "> <span class="ml-4">%</span>
                                 <button id="save-button"
                                     class="bg-indigo-600 text-white py-2 rounded mt-8 w-32 font-semibold ">Save</button>
 
                             </p>
                         </div>
-
+                        <!-- Savings amount -->
                         <div>
                             <h3 class="mt-4 text-2xl font-semibold text-center mt-4 mx-auto">Saving Amount: <span
                                     id="saving-amount">00</span></h3>
@@ -92,15 +92,12 @@
 
                     </div>
 
-
-
-
-
-
         </section>
     </main>
 
 
+
+    <!-- js script -->
     <script src=" money.js">
     </script>
 </body>
